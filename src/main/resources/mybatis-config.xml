@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="config/mapper.properties">
+        <!--<property name="recordStartIndex" value="0"/>-->
+        <!--<property name="pageSizeMax" value="10"/>-->
+    </properties>
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!--<setting name="aggressiveLazyLoading" value="false"/>-->
+        <setting name="useGeneratedKeys" value="true" />
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <!-- one or more -->
+        <package name="com.example.model"/>
+    </typeAliases>
+
+    <plugins>
+        <!-- 使用通用mapper简化单表操作-->
+        <plugin interceptor="com.github.abel533.mapperhelper.MapperInterceptor">
+            <property name="IDENTITY" value="mysql"/>
+            <!-- 通用mapper接口-->
+            <property name="mappers" value="com.github.abel533.mapper.Mapper"/>
+        </plugin>
+    </plugins>
+
+</configuration>

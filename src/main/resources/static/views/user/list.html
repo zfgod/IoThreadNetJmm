@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SpApp">
+<head>
+    <meta charset="UTF-8"/>
+    <title>user</title>
+    <!-- 绝对路径 -->
+    <script  src="/libs/angular.min.js"></script>
+    <script  src="/libs/jquery-1.11.2.min.js"></script>
+    <script  src="/js/global.js"></script>
+    <script  src="/js/application.js"></script>
+    <script  src="/js/user.js"></script>
+</head>
+<body ng-controller="UserCtrl">
+    <div ng-show="uList != null">
+        <table border="1" >
+            <tr>
+                <th>用户名</th>
+                <th>用户年龄</th>
+                <th>用户qq</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-repeat="u in uList">
+                <td>{{u.name}}</td>
+                <td>{{u.age}}</td>
+                <td>{{u.qq}}</td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
