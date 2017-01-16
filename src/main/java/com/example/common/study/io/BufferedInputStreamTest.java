@@ -7,7 +7,7 @@ import java.io.*;
  * Date: 2017/1/11  19:00
  * Description:
  */
-public class Buffered {
+public class BufferedInputStreamTest {
 	public static void main(String[] args) {
 //		String path = "E:\\io\\big.sql";
 		String path = "E:\\io\\b.txt";
