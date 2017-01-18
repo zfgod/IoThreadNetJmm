@@ -12,11 +12,11 @@ import java.nio.ByteBuffer;
 public class ByteBufferTest {
 	public static void main(String[] args) {
 /*
- * 构造一个byteBuffer
+ *  构造一个byteBuffer
  * 	字节缓冲区可以通过 allocation 方法创建，此方法为该缓冲区的内容分配空间，
  * 	或通过 wrapping 方法将现有的 byte 数组包装到缓冲区中来创建。原数组和缓冲区对象两者互相影响
  */
-// allocate(int capacity) 分配一个新的字节缓冲区。（非直接缓冲区）
+//      allocate(int capacity) 分配一个新的字节缓冲区。（非直接缓冲区）
 //		新缓冲区的位置将为零，其界限将为其容量，其标记是不确定的。它将具有一个底层实现数组，且其 数组偏移量将为零。
 //		capacity: 单位字节
 		ByteBuffer byteBuffer = ByteBuffer.allocate(64);//维护一个64字节的数组（0-63）内存空间
