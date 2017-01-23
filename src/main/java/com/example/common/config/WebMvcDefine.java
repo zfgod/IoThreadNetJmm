@@ -19,4 +19,5 @@ public class WebMvcDefine extends WebMvcConfigurerAdapter{
         configurer.setUseSuffixPatternMatch(false);
 		//取消默认配置的忽略点号后面内容 避免在前后分离开发时,页面导航位置和接口位置重合
 	}
+
 }
