@@ -5,14 +5,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-import java.beans.Encoder;
 import java.io.Serializable;
 
 /**
- * author: zf
- * Date: 2016/12/26  18:25
- * Description:
- */
+  * author: zf
+  * Date: 2016/12/26  18:25
+  * Description:
+  */
 @Component
 @ConfigurationProperties(prefix = "customer",
         locations = {"classpath:config/customer.properties"},
